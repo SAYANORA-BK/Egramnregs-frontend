@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Bell, CheckCircle, AlertCircle, Info, X, Eye, Trash2 } from 'lucide-react';
 
-export function Notifications() {
+const Notifications=()=> {
   const [notifications, setNotifications] = useState([
     {
       id: 'N001',
@@ -253,3 +253,4 @@ export function Notifications() {
     </div>
   );
 }
+export default Notifications;

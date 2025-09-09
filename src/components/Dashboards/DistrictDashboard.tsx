@@ -139,7 +139,7 @@ export function DistrictDashboard() {
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow cursor-pointer">
           <div className="flex items-center space-x-4">
             <div className="bg-emerald-100 text-emerald-600 rounded-lg p-3">
-              <Video className="h-6 w-6" />
+              {/* <Video className="h-6 w-6" /> */}
             </div>
             <div>
               <h3 className="font-semibold text-gray-900">Video Conference</h3>

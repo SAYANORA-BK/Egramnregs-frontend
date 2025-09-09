@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Briefcase, MapPin, Users, Calendar, CheckCircle, AlertCircle } from 'lucide-react';
+import { Briefcase, MapPin, Users, Calendar, CheckCircle } from 'lucide-react';
 
-export function JobApplication() {
+const JobApplication = () => {
   const [applicationType, setApplicationType] = useState<'own' | 'specific' | ''>('');
   const [formData, setFormData] = useState({
     workType: '',
@@ -82,6 +82,7 @@ export function JobApplication() {
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
         <h2 className="text-xl font-semibold text-gray-900 mb-6">Job Application</h2>
         
+        {/* Type selection cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <div
             onClick={() => setApplicationType('own')}
@@ -122,6 +123,7 @@ export function JobApplication() {
           </div>
         </div>
 
+        {/* Conditional form */}
         {applicationType && (
           <form onSubmit={handleSubmit} className="space-y-6">
             {applicationType === 'specific' ? (
@@ -203,6 +205,7 @@ export function JobApplication() {
               </>
             )}
 
+            {/* Location & date */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Location *</label>
@@ -245,7 +248,7 @@ export function JobApplication() {
         )}
       </div>
 
-      {/* Available Works */}
+      {/* Available Works List */}
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Available Works in Your Area</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -275,4 +278,6 @@ export function JobApplication() {
       </div>
     </div>
   );
-}
+};
+
+export default JobApplication;

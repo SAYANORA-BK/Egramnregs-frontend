@@ -1,7 +1,7 @@
 import React from 'react';
 import { BarChart3, TrendingUp, Calendar, DollarSign, Clock, Users } from 'lucide-react';
 
-export function Analytics() {
+const Analytics=() =>{
   const personalStats = {
     totalApplications: 8,
     approvedApplications: 5,
@@ -190,3 +190,4 @@ export function Analytics() {
     </div>
   );
 }
+export default Analytics;

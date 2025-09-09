@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar, Users, DollarSign, Filter, Search } from 'lucide-react';
 
-export function WorkList() {
+const WorkList=()=> {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('');
@@ -246,3 +246,4 @@ export function WorkList() {
     </div>
   );
 }
+export default WorkList;

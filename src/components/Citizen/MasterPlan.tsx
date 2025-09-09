@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, FileText, Calendar, MapPin, DollarSign } from 'lucide-react';
 
-export function MasterPlan() {
+const MasterPlan =() =>{
   const masterPlans = [
     {
       id: 'MP2024',
@@ -160,3 +160,4 @@ export function MasterPlan() {
     </div>
   );
 }
+export default MasterPlan

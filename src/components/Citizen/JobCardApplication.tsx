@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Upload, FileText, CreditCard, Image, CheckCircle, AlertCircle } from 'lucide-react';
 
-export function JobCardApplication() {
+function JobCardApplication() {
   const [formData, setFormData] = useState({
     applicantName: '',
     fatherName: '',
@@ -50,7 +50,9 @@ export function JobCardApplication() {
         </div>
         <h2 className="text-xl font-semibold text-gray-900 mb-2">Application Submitted Successfully!</h2>
         <p className="text-gray-600 mb-4">Your job card application has been submitted for verification.</p>
-        <p className="text-sm text-gray-500">Application ID: <span className="font-mono font-medium">JC-2024-001234</span></p>
+        <p className="text-sm text-gray-500">
+          Application ID: <span className="font-mono font-medium">JC-2024-001234</span>
+        </p>
         <button
           onClick={() => setApplicationStatus(null)}
           className="mt-4 px-6 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
@@ -65,7 +67,7 @@ export function JobCardApplication() {
     <div className="space-y-6">
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
         <h2 className="text-xl font-semibold text-gray-900 mb-6">Job Card Application</h2>
-        
+
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Personal Information */}
           <div>
@@ -269,3 +271,5 @@ export function JobCardApplication() {
     </div>
   );
 }
+
+export default JobCardApplication;

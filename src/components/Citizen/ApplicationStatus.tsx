@@ -1,7 +1,7 @@
 import React from 'react';
 import { Clock, CheckCircle, XCircle, AlertCircle, FileText, Eye } from 'lucide-react';
 
-export function ApplicationStatus() {
+const  ApplicationStatus =()=> {
   const applications = [
     {
       id: 'JC001',
@@ -162,3 +162,4 @@ export function ApplicationStatus() {
     </div>
   );
 }
+export default ApplicationStatus;

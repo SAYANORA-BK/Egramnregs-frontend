@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Users, MapPin, Calendar, FileText, CheckCircle } from 'lucide-react';
 
-export function JobRequest() {
+const JobRequest=() =>{
   const [formData, setFormData] = useState({
     workTitle: '',
     workDescription: '',
@@ -226,3 +226,4 @@ export function JobRequest() {
     </div>
   );
 }
+export default JobRequest;
